@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,18 +6,9 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  id?: number;
-  private sub: any;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor() { }
 
-  ngOnInit(): void {
-    // this.sub = this.route.params.subscribe(
-    //   params => {
-    //     this.id = params['id']
-    //     alert(this.id);
-    //   }    
-    // )
-  }
+  ngOnInit(): void { }
 
 }

@@ -14,7 +14,7 @@ article p:first-child {
   margin-bottom: 10px;
 }
 
-article .material-icons {
+article .material-icons{
   position: absolute;
   bottom: 5px;
   right: 5px;
@@ -34,5 +34,13 @@ article .material-icons:hover {
   position: absolute;
   bottom: 5px;
   left: 5px;
+  width: fit-content;
+}
+
+#edit {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+
   width: fit-content;
 }

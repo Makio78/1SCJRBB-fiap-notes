@@ -1,4 +1,4 @@
 <section>
-    <app-note *ngFor="let note of notes" (notify)="removeNote(note.id)"
+    <app-note *ngFor="let note of notes" (deleteNotify)="removeNote(note.id)" (updateNotify)="editNote(note)" 
         [noteProp]="note" [titleProp]="title"></app-note>
 </section>
