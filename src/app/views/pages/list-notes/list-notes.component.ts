@@ -16,13 +16,12 @@ export class ListNotesComponent implements OnInit {
 
   //injetando a dependência do service
   constructor(private noteService: NoteService) {
-    this.subscription = this.noteService.newNoteProvider.subscribe({
-      next: (note: Note) => {
-        // this.getApiNotes();
-        this.notes.push(note);
-      },
-      error: () => {}
-    });
+    this.subscription = this.noteService.newNoteProvider.
+        subscribe((note: Note) => {
+          this.getApiNotes();
+          //this.notes.push(note);
+        });
+        error: () => {}
   }
 
   // método do ciclo de vida do componente

@@ -30,7 +30,6 @@ export class FormNoteComponent implements OnInit {
     this.checkoutForm = this.formBuilder.group({
         textNote: ['', [Validators.required, Validators.minLength(5)]],
     })
-
   }
 
   ngOnInit(): void {  
